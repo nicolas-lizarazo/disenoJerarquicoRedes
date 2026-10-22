@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"Dise&#xf1;o jer&#xe1;rquico de redes","children":[{"content":"&#xbf;Por qu&#xe9; usarlo?","children":[{"content":"Divide una red compleja en partes m&#xe1;s peque&#xf1;as","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"Facilita mantenimiento y soluci&#xf3;n de problemas","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"Mejora escalabilidad, rendimiento y redundancia","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"El tr&#xe1;fico local se queda local; solo sube lo necesario","children":[],"payload":{"tag":"li","lines":"6,8"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"Principios de ingenier&#xed;a estructurada","children":[{"content":"Jerarqu&#xed;a","children":[{"content":"Organizar la red por niveles","children":[],"payload":{"tag":"li","lines":"10,11"}}],"payload":{"tag":"li","lines":"9,11"}},{"content":"Modularidad","children":[{"content":"Separar funciones en m&#xf3;dulos (campus, data center, Internet)","children":[],"payload":{"tag":"li","lines":"12,13"}}],"payload":{"tag":"li","lines":"11,13"}},{"content":"Resistencia","children":[{"content":"La red sigue funcionando ante fallas o mantenimiento","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"li","lines":"13,15"}},{"content":"Flexibilidad","children":[{"content":"Crecer o agregar servicios sin redise&#xf1;ar todo","children":[],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"li","lines":"15,18"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Tama&#xf1;o de la red","children":[{"content":"Peque&#xf1;a","children":[{"content":"Hasta 200 dispositivos","children":[],"payload":{"tag":"li","lines":"20,21"}}],"payload":{"tag":"li","lines":"19,21"}},{"content":"Mediana","children":[{"content":"200 a 1000 dispositivos","children":[],"payload":{"tag":"li","lines":"22,23"}}],"payload":{"tag":"li","lines":"21,23"}},{"content":"Grande","children":[{"content":"M&#xe1;s de 1000 dispositivos","children":[],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"li","lines":"23,26"}}],"payload":{"tag":"h2","lines":"18,19"}},{"content":"Las tres capas","children":[{"content":"Acceso","children":[{"content":"Conecta usuarios, PCs, impresoras, puntos de acceso","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"Switches de capa 2","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"Seguridad de puerto, VLANs, QoS, PoE para VoIP","children":[],"payload":{"tag":"li","lines":"30,31"}}],"payload":{"tag":"li","lines":"27,31"}},{"content":"Distribuci&#xf3;n","children":[{"content":"Une varios switches de acceso","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Enrutamiento entre VLANs y dominios","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"ACLs, filtrado, redundancia y balanceo de carga","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Controla dominios de broadcast","children":[],"payload":{"tag":"li","lines":"35,36"}}],"payload":{"tag":"li","lines":"31,36"}},{"content":"N&#xfa;cleo (backbone)","children":[{"content":"Transporte muy r&#xe1;pido entre switches de distribuci&#xf3;n","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"Alta disponibilidad y tolerancia a fallas","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"Evita procesamiento pesado de paquetes (QoS, inspecci&#xf3;n, etc.)","children":[],"payload":{"tag":"li","lines":"39,41"}}],"payload":{"tag":"li","lines":"36,41"}}],"payload":{"tag":"h2","lines":"26,27"}},{"content":"Dise&#xf1;o de dos niveles: n&#xfa;cleo contra&#xed;do","children":[{"content":"Se usa en redes peque&#xf1;as o medianas","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"Distribuci&#xf3;n y n&#xfa;cleo se combinan en un solo switch multicapa","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"Ventaja: menor costo","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"Mantiene buena parte de los beneficios del modelo de tres capas","children":[],"payload":{"tag":"li","lines":"45,46"}}],"payload":{"tag":"h2","lines":"41,42"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+</body>
+</html>
